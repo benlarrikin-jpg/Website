@@ -8,3 +8,4 @@ class Food(models.Model):
     picture=models.ImageField(upload_to='images/')
 
     description=models.TextField(max_length=100)
+
