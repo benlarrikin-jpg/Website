@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Menu</title>
+</head>
+<body>
+    <h1>Food Menu</h1>
+    <ul>
+        {% for food in foods %}
+            <li>
+                <h2>{{ food.name }} - ${{ food.price }}</h2>
+                <p>{{ food.description }}</p>
+                {% if food.picture %}
+                    <img src="{{ food.picture.url }}" alt="{{ food.name }}" width="150">
+                {% endif %}
+            </li>
+        {% empty %}
+            <li>No food items available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
