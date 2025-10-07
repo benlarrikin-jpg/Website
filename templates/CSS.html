@@ -1,25 +1,184 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-h1 {
-  color: navy;
-}
+  <head>
+    <style>
+      body {background-color: olivedrab;
+      }
+      h1 {
+        color: purple;
+        text-align: center; 
+      }
+      p {
+        color: brown;
+        font-family: Verdana;
+        font-size: 20px;
+      }
+      </style>
+      <body>
+      <h1>My first CSS example</h1>
+      <p>This is the beginning</p>
+      </body>
+      <hr>
 
-p.mix {border-style: dashed dotted double ridge;
-border-color: aqua blue green yellow;
-border-radius: 20px;}
+      <style>
+        #para1 {
+          text-align: left;
+          background-color: yellow;
+          color: brown;
+        }
+        h2 {
+          text-align: right;
+          color: blue;
+        }
+        </style>
+        <body>
+          <h2>Second CSS header</h2>
+          <p id="para1">The beginning</p>
+        </body>
+        <hr>
 
-p {border-left: 10px solid orchid;
-border-bottom: 5px double orange;}
-/* I write comments */
-</style>
-</head>
-<body>
+        <style>
+          .center {
+            text-align: center;
+            color: black;
+            font-family: sans-serif;
+          }
+          p.large {
+            font-size: 20px;
+          }
+          </style>
+          <body>
+            <h3 class="center">Third CSS example</h3>
+            <p class="center">The beginning again</p>
+            <p class="center large">This is mine</p>
+          </body>
+          <hr>
 
-<h1 style="border: 5px solid red;">This is a stylesheet</h1>
-<p>The style of this document is a combination of an external stylesheet,
-and internal style</p>
-<p class="mix"> a mixed border </p>
-</body>
-</html>
+          <style>
+            h1, h2, h3, p {
+            }
+            </style>
+            <body>
+              <h1 class="center">CSC</h1>
+              <h2 class="center">SSC</h2>
+              <h3 class="center">CSS</h3>
+            </body>
+            <hr>
+
+            <h4 style="color:blue; text-align: center;">Inline styles</h4>
+            <p style="color:red;">This is a stylesheet</p>
+            <hr>
+
+            <link rel="stylesheet" type="text/css" href="mystyle.css">
+            <style>
+              h5 {color: orange;
+                text-align: right;
+                font-size: 25px;
+              }
+            </style>
+            <body>
+            <h5>This is a stylesheet</h5>
+            <p>Combination of external and internal</p>
+            </body>
+            <hr>
+
+            <style>
+          h6 {
+        color: navy;
+        font-size: 30px;
+        }
+        p.mix {
+          border-style: dashed dotted double ridge;
+          border-color: aqua blue green yellow;
+          border-radius: 30px;
+        }
+            /* I write comments */
+            </style>
+            <body>
+              <h6 style="border: 5px solid red;">This is a stylesheet</h6>
+              <p>The style of this document is a combination of an external stylesheet,
+                and internal style</p>
+                <p class="mix"> a mixed border </p>
+                </body>
+                <hr>
+                
+                <style>
+                  div {
+                    margin: 20px;
+                    border: 5px solid skyblue;
+                     background-color: whitesmoke;
+                        opacity: 1;
+                    }
+                    </style>
+                    <h7> time for margins </h7>
+                    <div> greenyellow is a funny color </div>
+                    <hr>
+                   
+                    <style>
+                    div.ex1 {
+                      padding: 10px, 20px, 30px, 10px;
+                      width: 300;
+                      background-color: blueviolet;
+                      border-color: brown;
+                      }
+                      div.ex2 {
+                        width: 600px;
+                        padding: 20px;
+                        background-color: pink;
+                        border: 3px solid black;
+                      }
+                      </style>
+                      <body>
+                      <h8>Using individual padding properties</h8>
+                      <div class="ex1">This element has a top padding</div>
+                      <div class="ex2"> This element has a right padding, a bottom padding of 50px, and a left padding.</div>
+                      </body>
+                      <hr>
+
+                      <style>
+                        .div {
+                          border: 1px solid gray;
+                          padding: 8px;
+                        }
+                        p {
+                          text-indent: 50px;
+                          text-align: justify;
+                          letter-spacing: 3px;
+                          word-spacing: 5px;
+                        }
+                        a {
+                          text-decoration: none;
+                          color: blue;
+                        }              
+                      </style>
+                      <body>
+                        <div>
+                          <p>This text is styled with some of the text formatting properties.
+                          <a target="_blank" href="tryit.asp?filename=trycss_text">"formatting"</a> link.</p>
+                        </div>
+                      </body>
+                      <hr>
+
+                      <style>
+                        h1 {
+                          text-decoration: underline black;
+                          letter-spacing: 5px;
+                        }
+                        p.ex {
+                          text-decoration: overline underline;
+                          text-decoration-style: dotted;
+                          text-decoration-thickness: 5px;
+                        }
+                        p.uppercase {
+                          text-transform: uppercase;
+                        }
+                      </style>
+                      <body>
+                        <h1>Overline text decoration</h1>
+                        <p class="ex">Overline and underline text decoration.</p>
+                        <p class="uppercase">This text is transformed to uppercase.</p>
+                      </body>
+                      <hr>
+
+                    </head>
+                        </html>
