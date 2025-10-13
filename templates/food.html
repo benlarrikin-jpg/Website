@@ -2,9 +2,21 @@
 <html>
 <head>
     <title>Food Form</title>
+    <style>
+        body {
+            background-color: lightsteelblue;
+        }
+        h1 {
+            color: green;
+            font-family: 'Arial Narrow Bold';
+            border-style: double;
+            border-color: crimson;
+            width: 500px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contact Us</h1>
+    <h1>Place your order here</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
