@@ -65,7 +65,7 @@
             </body>
             <hr>
 
-            <h4 style="color:blue; text-align: center;">Inline styles</h4>
+            <h1 style="color:blue; text-align: center;">Inline styles</h1>
             <p style="color:red;">This is a stylesheet</p>
             <hr>
 
@@ -73,7 +73,7 @@
             <style>
               h5 {color: orange;
                 text-align: right;
-                font-size: 25px;
+                font-size: 10px;
               }
             </style>
             <body>
@@ -110,7 +110,7 @@
                         opacity: 1;
                     }
                     </style>
-                    <h7> time for margins </h7>
+                    <h1> Time for margins </h1>
                     <div> greenyellow is a funny color </div>
                     <hr>
                    
@@ -129,7 +129,7 @@
                       }
                       </style>
                       <body>
-                      <h8>Using individual padding properties</h8>
+                      <h1>Using individual padding properties</h1>
                       <div class="ex1">This element has a top padding</div>
                       <div class="ex2"> This element has a right padding, a bottom padding of 50px, and a left padding.</div>
                       </body>
@@ -186,9 +186,13 @@
                           font-family: "sofia", sans-serif;
                           font-size: 30px;
                         }
+                        h6 {
+                          text-align: right;
+                        }
                       </style>
+                      
                       <body>
-                        <h9 class="font-effect-fire">Sofia on fire</h9>
+                        <h6 class="font-effect-fire">Sofia on fire</h6>
                         <p class="font-effect-fire">Sofia is hot</p>
                         <p class="font-effect-neon">Sofia is cool</p>
                       </body>
@@ -198,7 +202,7 @@
                       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
                       <body class="fill">
-                        <h10>Bootstrap icon library</h10>
+                        <h1>Bootstrap icon library</h1>
                         <p>Some Bootstrap icons:</p>
                         <i class="glyphicon glyphicon-cloud"></i>
                         <i class="glyphicon glyphicon-fire"></i>
@@ -216,7 +220,7 @@
                         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
                         <body>
-                        <h11>Google icon library</h11>
+                        <h1>Google icon library</h1>
                         <p>Some Google icons:</p>
                         <i class="material-icons" style="font-size:70px;color: violet;">flag</i>
                         <i class="material-icons" style="font-size:60px;color: gold;">attachment</i>
@@ -244,11 +248,11 @@
                           }
                         </style>
                         <body>
-                          <h12>Styling Link</h12>
+                          <h1>Styling Link</h1>
                           <p><a href="default.asp" target="_blank">This is a link</a></p>
                           <hr>
 
-                          <h13>Cursor properties</h13>
+                          <h1>Cursor properties</h1>
                           <p>Mouse over the words to change the cursor.</p>
                           <span style="cursor:crosshair; font-size:30px;">crosshair</span><br>
                           <span style="cursor:progress; font-size: 30px;">progress</span><br>
@@ -262,7 +266,7 @@
                         </style>
 
                         <body>
-                          <h14>List style typing</h14>
+                          <h1>List style typing</h1>
                           <p>Unordered list:</p>
                           <ul class="a">
                             <li>headache</li>
@@ -282,26 +286,25 @@
                         table {
                           font-family: Helvetica;
                           border-collapse: separate;
-                          width: 80%;
+                          width: 60%;
                         }
                         td, th {
                           border: 1px solid gray;
                           padding: 8px;
+                          text-align: center;
                         }
                         tr:nth-child(even){background-color: lightsalmon;}
                         tr:hover {background-color: lightskyblue;}
                         th {
                           padding-top: 15px;
                           padding-bottom: 15px;
-                          text-align: left;
+                          text-align: center;
                           background-color: greenyellow;
                           color: rebeccapurple;
                           }
                           </style>
-                          <hr>
 
                           <body>
-                            <h1>Making a table</h1>
                             <table>
                               <tr>
                                 <th>Friend</th>
@@ -323,6 +326,97 @@
                                 <td>Male</td>
                                 <td>Abia</td>
                               </tr>
+                          </body>
+                          
+                          <style>
+                            div.tablecontainer {
+                            overflow-x: auto;
+                          }
+                          table {
+                            border-collapse: collapse;
+                            width: 100%;
+                          }
+                          table, th, td {
+                            border: 1px solid lightblue;
+                            padding: 8px;
+                            text-align: left;
+                          }
+                          </style>
+
+                          <body>
+                            <h1>Responsive Table</h1>
+                            <p>To create a responsive table, 
+                              add a container element (like div) with <strong>overflow-x:auto</strong>
+                              around the table element:</p>
+                              <div class="tablecontainer">
+                                <table>
+                                  <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Hilary</td>
+                                    <td>Peter</td>
+                                    <td>50</td>
+                                    <td>60</td>
+                                    <td>70</td>
+                                    <td>80</td>
+                                    <td>90</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Elizabeth</td>
+                                    <td>Clara</td>
+                                    <td>94</td>
+                                    <td>84</td>
+                                    <td>74</td>
+                                    <td>64</td>
+                                    <td>54</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Prince</td>
+                                    <td>Emmanuel</td>
+                                    <td>67</td>
+                                    <td>77</td>
+                                    <td>57</td>
+                                    <td>87</td>
+                                    <td>47</td>
+                                  </tr>
+                                </table>
+                              </div>
+                          </body>
+                          <hr>
+
+                          <style>
+                            #panel, .flip {
+                              padding: 10px;
+                              text-align: center;
+                              background-color: violet;
+                              color: white;
+                              border: solid 1px olivedrab;
+                              margin: auto;
+                              cursor:pointer;
+                            }
+                            #panel {
+                              display: none;
+                            }
+                          </style>
+                          <body>
+                            <p class="flip" onclick="myFunction()">Click to show panel</p>
+                            <div id="panel">
+                              <p>How it works: When the user clicks on the p element, a function called myFunction() is executed,
+                                which changes the style of the div with id="panel" from display:none (hidden) to display:block
+                                (visible).</p>
+                            </div>
+                            <script>
+                            function myFunction() {
+                              document.getElementById("panel").style.display = "block";
+                              }
+                              </script>
                           </body>
                           <hr>
 
